@@ -1,0 +1,33 @@
+# Site settings
+title: "EGSR"
+tagline: "Eurographics Symposium on Rendering"
+
+# URL - Deployment
+url: "https://www.egsr2024.org"
+#url: "localhost:4000"
+
+# Handling Reading
+safe: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Contact
+email: "chairs-egsr2024@eg.org"
+
+# Social
+#facebook: Conference-on-Visual-Media-Production-307514829299111
+twitter: EGSympRendering
+
+
+# Use this for production
+sass:
+    style: compressed
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
